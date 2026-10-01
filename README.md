@@ -4,13 +4,16 @@ Projet académique réalisé dans le cadre de la Licence Informatique à l'Unive
 
 ## 🚀 Fonctionnalités principales
 - **Architecture MVC :** Séparation claire de la logique métier, des données et de l'interface utilisateur.
-- **Système d'authentification & Sécurité :** Gestion des rôles utilisateurs (**Admin** et **Membre**) avec contrôle d'accès sécurisé.
+- **Système d'authentification & Sécurité :** 
+  - Gestion des rôles utilisateurs (**Admin** et **Membre**) avec contrôle d'accès sécurisé.
+  - Sécurisation des mots de passe par hachage cryptographique **SHA-256 combiné à un système de salage (Salt)** pour contrer les attaques parレインボー tables (tables arc-en-ciel).
 - **Interface Responsive :** Conception front-end moderne et adaptative en HTML5/CSS3 et Bootstrap.
 - **Gestion des données :** Persistance assurée par une base de données relationnelle (MariaDB).
 
-## 🛠️ Stack Technique
+## 🛠️ Stack Technique & Sécurité
 - **Front-end :** HTML5, CSS3, Bootstrap
 - **Back-end :** PHP / Framework CodeIgniter4
+- **Sécurité :** Algorithme de hachage SHA-256 + Salt, gestion des sessions sécurisées
 - **Base de données & Outils :** MariaDB, MySQL Workbench, phpMyAdmin
 - **Versioning :** Git / GitLab
 

@@ -1,0 +1,457 @@
+ERROR - 2025-11-12 15:57:14 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+#5 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->creer()
+#6 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DIFAL3/e22308557/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-12 15:57:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Column count doesn't match value count at row 1
+[Method: POST, Route: compte/creer]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 15:57:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column count doesn't match value count at row 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 15:57:14 --> [Caused by] mysqli_sql_exception: Column count doesn't match value count at row 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-12 16:02:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '','123456789','A')' at line 1 in /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+#5 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->creer()
+#6 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DIFAL3/e22308557/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-12 16:02:17 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '','123456789','A')' at line 1
+[Method: POST, Route: compte/creer]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 16:02:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '','123456789','A')' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 16:02:17 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '','123456789','A')' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-12 16:11:17 --> mysqli_sql_exception: Duplicate entry 'modou' for key 'cpt_pseudo_UNIQUE' in /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+#5 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Compte->creer()
+#6 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DIFAL3/e22308557/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-12 16:11:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'modou' for key 'cpt_pseudo_UNIQUE'
+[Method: POST, Route: compte/creer]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 16:11:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'modou' for key 'cpt_pseudo_UNIQUE'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 16:11:17 --> [Caused by] mysqli_sql_exception: Duplicate entry 'modou' for key 'cpt_pseudo_UNIQUE'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(56): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(41): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2025-11-12 16:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 16:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-12 21:38:16 --> ParseError: syntax error, unexpected variable "$sql"
+[Method: GET, Route: Demande/enregistrer]
+in APPPATH/Models/Db_model.php on line 68.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Config/Factories.php(297): class_exists()
+ 5 SYSTEMPATH/Config/Factories.php(216): CodeIgniter\Config\Factories::locateClass()
+ 6 SYSTEMPATH/Config/Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance()
+ 7 SYSTEMPATH/Common.php(802): CodeIgniter\Config\Factories::__callStatic()
+ 8 APPPATH/Controllers/Demande.php(32): model()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 21:43:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "compte/formulaire.php"
+[Method: GET, Route: Demande/enregistrer]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Demande.php(71): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2025-11-12 21:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 21:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 21:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-11-12 21:55:14 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+#5 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+#6 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DIFAL3/e22308557/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-12 21:55:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Column count doesn't match value count at row 1
+[Method: POST, Route: demande/enregistrer]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 21:55:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column count doesn't match value count at row 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 21:55:14 --> [Caused by] mysqli_sql_exception: Column count doesn't match value count at row 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-12 22:04:40 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Models/Db_model.php(70): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+#5 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+#6 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DIFAL3/e22308557/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-12 22:04:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Column count doesn't match value count at row 1
+[Method: POST, Route: demande/enregistrer]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(70): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 22:04:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column count doesn't match value count at row 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(70): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 22:04:40 --> [Caused by] mysqli_sql_exception: Column count doesn't match value count at row 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(70): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-12 22:06:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''null'' at line 1 in /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+#5 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+#6 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DIFAL3/e22308557/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-12 22:06:15 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''null'' at line 1
+[Method: POST, Route: demande/enregistrer]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 22:06:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''null'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 22:06:15 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''null'' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2025-11-12 22:08:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`e22308557_db1`.`t_message_msg`, CONSTRAINT `fk_t_message_msg_t_compte_cpt1` FOREIGN KEY (`cpt_id`) REFERENCES `t_compte_cpt` (`cpt_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2025DIFAL3/e22308557/public_html/V1/ci/app/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+#5 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+#6 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/2025DIFAL3/e22308557/public_html/V1/ci/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/2025DIFAL3/e22308557/public_html/V1/ci/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-11-12 22:08:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e22308557_db1`.`t_message_msg`, CONSTRAINT `fk_t_message_msg_t_compte_cpt1` FOREIGN KEY (`cpt_id`) REFERENCES `t_compte_cpt` (`cpt_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[Method: POST, Route: demande/enregistrer]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 22:08:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e22308557_db1`.`t_message_msg`, CONSTRAINT `fk_t_message_msg_t_compte_cpt1` FOREIGN KEY (`cpt_id`) REFERENCES `t_compte_cpt` (`cpt_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 22:08:46 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`e22308557_db1`.`t_message_msg`, CONSTRAINT `fk_t_message_msg_t_compte_cpt1` FOREIGN KEY (`cpt_id`) REFERENCES `t_compte_cpt` (`cpt_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(69): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Demande.php(61): App\Models\Db_model->set_message()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->enregistrer()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2025-11-12 22:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 22:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 22:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 22:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 22:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 22:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 22:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 22:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 22:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-12 23:12:33 --> ErrorException: Undefined variable $titre
+[Method: POST, Route: demande/verifier]
+in APPPATH/Views/message/suivi_succes.php on line 1.
+ 1 APPPATH/Views/message/suivi_succes.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/2025DIFAL3/e22308557/public_html/V1/ci/app/Views/message/suivi_succes.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Demande.php(103): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Demande->verifier()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 23:14:54 --> ParseError: syntax error, unexpected variable "$data"
+[Method: POST, Route: demande/verifier]
+in APPPATH/Controllers/Demande.php on line 101.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-11-12 23:14:59 --> ParseError: syntax error, unexpected variable "$data"
+[Method: GET, Route: demande/verifier]
+in APPPATH/Controllers/Demande.php on line 101.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2025-11-12 23:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-12 23:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
